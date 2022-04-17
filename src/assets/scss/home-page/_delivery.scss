@@ -1,0 +1,74 @@
+.delivery {
+	padding-top: 5rem;
+	padding-bottom: 18rem;
+	&__title, &__subtitle {
+		max-width: 77.3rem;
+		margin-left: auto;
+	}
+	&__title {
+		margin-bottom: 4rem;
+	}
+	&__subtitle {
+		margin-bottom: 4.5rem;
+		font-family: Montserrat, sans-serif;
+		font-weight: 700;
+		font-size: 3.2rem;
+	}
+	&__card {
+		padding: 3rem 2rem 2rem 3rem;
+		width: 37rem;
+		border-radius: .5rem;
+		box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
+		&_img {
+			align-self: stretch;
+			background-image: url("../img/delivery-truck.jpg");
+			background-position: center center;
+			background-size: cover;
+		}
+		&_yellow {
+			background-color: #FFC801;
+			.card__txt {
+				&:not(:last-child) {
+					margin-bottom: 3rem;
+				}
+				font-family: Montserrat, sans-serif;
+				font-weight: 700;
+			}
+		}
+		&_white {
+			background-color: #F6F6F6;
+		}
+		address {
+			font-style: normal;
+			letter-spacing: .05em;
+		}
+	}
+	.card {
+		&__post {
+			margin-bottom: .5rem;
+			max-width: 25rem;
+			flex-wrap: wrap;
+		}
+		&__txt {
+			letter-spacing: .05em;
+		}
+		&__link {
+			font-size: 1.4rem;
+			color: #C50202;
+			text-decoration: underline;
+		}
+	}
+	&__info {
+		margin-bottom: 5rem;
+	}
+	&__images {
+		align-items: flex-start;
+		justify-content: center;
+		img:not(:last-child) {
+			margin-right: 3rem;
+		}
+	}
+}

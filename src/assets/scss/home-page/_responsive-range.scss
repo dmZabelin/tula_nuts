@@ -1,0 +1,36 @@
+@media only screen and (max-width: 767.98px) {
+	.range {
+		padding-bottom: 5rem;
+		&__title, &__subtitle {
+			padding-left: 3rem;
+			max-width: none;
+			&::after {
+				left: 0;
+			}
+		}
+		&__card {
+			width: calc(50% - 0.5rem);
+		}
+		.card {
+			&_left {
+				margin-right: 1rem;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576.98px) {
+	.range {
+		&__products {
+			flex-wrap: wrap;
+		}
+		&__card {
+			width: 100%;
+		}
+		.card {
+			&_left {
+				margin-right: 0;
+				margin-bottom: 3rem;
+			}
+		}
+	}
+}

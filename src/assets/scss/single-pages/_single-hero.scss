@@ -1,0 +1,50 @@
+.single-hero {
+	padding-top: 26rem;
+	padding-bottom: 16.5rem;
+	&__title, &__subtitle {
+		text-align: center;
+		font-family: Montserrat, sans-serif;
+		letter-spacing: 0.1em;
+		text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+		color: #FFFFFF;
+	}
+	&__title {
+		margin-bottom: 1.5rem;
+		font-size: 4.5rem;
+	}
+	&__subtitle {
+		font-size: 2rem;
+		font-weight: 700;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-delay: 1s;
+		animation-fill-mode: both;
+	}
+	&_walnut {
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/walnut.jpg") no-repeat center center /cover;
+	}
+	&_walnut-hybrids {
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/walnut-hybrids.jpg") no-repeat center center /cover;
+	}
+	&_manchurian {
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/manchurian.jpg") no-repeat center center /cover;
+	}
+	&_siebold {
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/siebold.jpg") no-repeat center center /cover;
+	}
+	&_heart-shaped {
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/heart-shaped.jpg") no-repeat center center /cover;
+	}
+	&_kariya-heart-shaped{
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/kariya-heart-shaped.jpg") no-repeat center center /cover;
+	}
+	&_ginkgo-biloba{
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/ginkgo-biloba.jpg") no-repeat center center /cover;
+	}
+	&_dogwood {
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/dogwood.jpg") no-repeat center center /cover;
+	}
+	&_dogwood-forms {
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 36%, rgba(46,46,46,0.3) 100%), url("../img/dogwood-forms.jpg") no-repeat center center /cover;
+	}
+}

@@ -1,0 +1,43 @@
+@media only screen and (max-width: 991.98px) {
+	.hero {
+		padding-bottom: 20rem;
+	}
+}
+@media only screen and (max-width: 576.98px) {
+	.hero {
+		padding-top: 10rem;
+	}
+	.offer__title {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 449.98px) {
+	.offer {
+		&__title {
+			margin-bottom: 2rem;
+			font-size: 4rem;
+		}
+		&__subtitle, &__descr {
+			text-align: center;
+			max-width: 320px;
+			margin: auto;
+		}
+		&__subtitle {
+			margin-bottom: 1.5rem;
+		}
+		&__play {
+			text-align: center;
+			&::after {
+				position: relative;
+				right: 0;
+				top: 100%;
+				display: block;
+				margin-top: .5rem;
+			}
+		}
+
+		&__descr {
+			margin-bottom: 7rem;
+		}
+	}
+}

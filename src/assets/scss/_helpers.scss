@@ -1,0 +1,70 @@
+.d-flex {
+	@include d-flex;
+}
+
+.d-none {
+	display: none;
+}
+
+.flex-center {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mb-0 {
+	margin-bottom: 0;
+}
+.mb-20 {
+	margin-bottom: 2rem;
+}
+.mb-30 {
+	margin-bottom: 3rem;
+}
+.mb-40 {
+	margin-bottom: 4rem;
+}
+
+.mb-50 {
+	margin-bottom: 5rem;
+}
+
+.no-indent {
+	text-indent: 0;
+}
+
+.height-auto {
+	height: auto !important;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.border-top-white {
+	border-top: 1px solid #fff !important;
+}
+
+.wrap-wrap {
+	flex-wrap: wrap;
+}
+
+.pt-11  {
+	padding-top: 1.2rem;
+}
+
+.pt-0 {
+	padding-top: 0;
+}
+
+.pb-0 {
+	padding-bottom: 0;
+}
+
+.pd-0 {
+	padding: 0 !important;
+}
+
+.w-100 {
+	width: 100%;
+}

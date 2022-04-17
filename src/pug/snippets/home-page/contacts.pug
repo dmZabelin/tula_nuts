@@ -1,0 +1,24 @@
+section.contacts#contacts
+	.contacts__container.container.d-flex
+		.contacts__info.info
+			h3.info__title Заказы принимаются круглый год!
+			p.info__time <span>Нахожусь на связи</span> ежедневно с 9-00 до 21-00
+			p.info__phone
+				span Мой телефон и мессенджеры:
+				a(href="tel:+79606194781") +7-960-619-47-81
+			p.info__mail
+				span Моя электронная почта:
+				a(href="mailto:vasin.oreh65@yandex.ru") vasin.oreh65@yandex.ru
+		form(action="").contacts__form.form
+			h4.form__title Для оформления заказа
+			p.form__descr предлагаю заполнить форму
+			fieldset
+				legend Форма обратной связи
+				span
+					input( class="form__input form-control" type="text" name="name" autocomplete="off" placeholder="Ваше Имя" data-validate-field="name")
+				span
+					input(class="form__input form-control" type="tel" name="tel" autocomplete="off" placeholder="Ваш телефон" data-validate-field="tel" data-validate-rules="phone")
+				span
+					input(type="email" class="form__input form-control" placeholder="Ваш E-mail" autocomplete="off" name="email" data-validate-field="mail")
+				textarea(name="text" placeholder="Сообщение" class="form__textarea")
+				button(class="form__btn btn-primary btn") Заказать

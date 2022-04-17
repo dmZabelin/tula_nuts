@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1599.98px) {
+
+}
+@media only screen and (max-width: 1199.98px) {
+	.about {
+		&__container {
+			max-width: 100%;
+			position: relative;
+			z-index: 1;
+		}
+	}
+}
+@media only screen and (max-width: 991.98px) {
+	.about {
+		&::before {
+			top: -10rem;
+			z-index: 0;
+		}
+	}
+	.knowing {
+		&__images {
+			display: none;
+		}
+		&__info_top {
+			order: 1;
+			padding-top: 5rem;
+		}
+		&__image {
+			order: 2;
+		}
+		&__info_bottom {
+			order: 3;
+			width: 100%;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin-top: -5rem;
+		}
+	}
+	.description {
+		&__title {
+			padding: 0 6rem 3rem 3rem;
+		}
+		&__txt {
+			padding: 0 0 0 3rem;
+		}
+	}
+}
+@media only screen and (max-width: 767.98px) {
+	.knowing {
+		&__name {
+			font-size: 2.4rem;
+		}
+		&__info_top {
+			padding-top: 0;
+		}
+		&__descr {
+			margin-bottom: 3rem;
+			font-size: 1.8rem;
+		}
+	}
+}
+@media only screen and (max-width: 576.98px) {
+	.about {
+		padding-bottom: 7rem;
+	}
+	.knowing {
+		&__info_top {
+			width: 100%;
+			padding-bottom: 5rem;
+		}
+		&__info_bottom {
+			margin-top: 0;
+		}
+		&__image {
+			max-width: 50rem;
+			max-height: 35rem;
+			margin: auto auto 5rem;
+			padding-left: 0;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center -10rem;
+			}
+			width: 100%;
+			overflow: hidden;
+		}
+		&__txt:not(:last-child) {
+			margin-bottom: 3rem;
+		}
+	}
+}
+@media only screen and (max-width: 449.98px) {
+	.knowing__info {
+		padding-left: 1.5rem;
+	}
+	.description {
+		&__title {
+			padding: 0 6rem 3rem 1.5rem;
+		}
+		&__txt {
+			padding: 0 0 0 1.5rem;
+		}
+	}
+}

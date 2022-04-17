@@ -1,0 +1,89 @@
+.contacts {
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+	background-image: url("../img/bg-cont.svg");
+	background-position: top center;
+	background-size: cover;
+	&__container {
+		width: 103rem;
+		justify-content: center;
+		align-items: center;
+	}
+	&__info {
+		margin-right: 4rem;
+	}
+	&__form {
+		margin-top: -8rem;
+		width: 57rem;
+		max-width: 100%;
+		background-color: #558900;
+		flex-shrink: 0;
+		fieldset {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.info {
+		&__title {
+			margin-bottom: 4.5rem;
+			font-size: 3.2rem;
+			font-family: Montserrat, sans-serif;
+			letter-spacing: .02em;
+		}
+		&__time, &__phone, &__mail {
+			margin-bottom: 5rem;
+			font-family: Montserrat, sans-serif;
+			font-size: 2rem;
+			font-weight: 700;
+			letter-spacing: .05em;
+			span {
+				display: block;
+				margin-bottom: .5rem;
+				font-weight: 400;
+			}
+		}
+	}
+	.form {
+		padding: 8rem 6.5rem 10rem;
+		box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+		border-radius: .5rem;
+		text-align: center;
+		font-family: Montserrat, sans-serif;
+		color: #fff;
+		&__title {
+			margin: 0;
+			font-size: 3.2rem;
+			letter-spacing: .02em;
+		}
+		&__descr {
+			margin-bottom: 5rem;
+			font-size: 2rem;
+			letter-spacing: .24em;
+			font-weight: 700;
+		}
+		&__input, &__textarea {
+			padding: 1.3rem 1.5rem;
+			margin-bottom: 3rem;
+			width: 100%;
+			border: none;
+			border-radius: .5rem;
+		}
+		&__textarea {
+			height: 10rem;
+			resize: none;
+		}
+		&__btn {
+			padding: 1.7rem;
+			background-color: #0CFF00;
+			border-radius: 3rem .5rem 3rem .5rem ;
+			border: none;
+			font-family: Montserrat, sans-serif;
+			font-size: 2rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			cursor: pointer;
+			letter-spacing: .15em;
+		}
+	}
+}

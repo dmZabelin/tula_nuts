@@ -1,0 +1,99 @@
+@media only screen and (max-width: 1599.98px) {
+
+}
+@media only screen and (max-width: 1199.98px) {
+	.progress {
+		&__privelege {
+			justify-content: center;
+		}
+		.card {
+			&:not(:last-child) {
+				margin-right: 1.5rem;
+			}
+			&__icon {
+				min-height: 10.5rem;
+			}
+			&__number {
+				max-width: 20rem;
+				margin: auto;
+				font-size: 6rem;
+			}
+			&__descr {
+				padding: 0;
+			}
+			&:nth-child(2) .card__descr {
+				padding: 0 2rem;
+			}
+			&:nth-child(3) .card__descr {
+				padding: 0 1rem;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991.98px) {
+	.progress {
+		&__privelege {
+			justify-content: center;
+		}
+		.card {
+			&__icon {
+				min-height: 13rem;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767.98px) {
+	.progress {
+		&__subtitle {
+			max-width: 55rem;
+			margin: auto auto 5rem;
+		}
+		&__privelege {
+			flex-wrap: wrap;
+		}
+		.card {
+			max-width: 30rem;
+			margin-bottom: 2rem;
+			width: calc(50% - 1rem);
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+			&__descr {
+				 padding: 0 2rem;;
+			 }
+			&:nth-child(2) .card__descr {
+				padding: 0 6rem;
+			}
+			&:nth-child(3) .card__descr {
+				padding: 0 3rem;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576.98px) {
+	.progress {
+		.card {
+			&__descr {
+				padding: 0 2rem;;
+			}
+			&:nth-child(2) .card__descr {
+				padding: 0 3.5rem;
+			}
+			&:nth-child(3) .card__descr {
+				padding: 0 2rem;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 449.98px) {
+	.progress {
+		.card {
+			max-width: 40rem;
+			width: 100%;
+			margin-right: 0 !important;
+			&__descr {
+				padding: 0 7rem !important;
+			}
+		}
+	}
+}

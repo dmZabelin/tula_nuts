@@ -1,0 +1,42 @@
+header.header#header
+	.header__container.container.d-flex
+		a(href="#").header__logo
+			img(src="./dist/assets/img/logo-header.svg" alt="Логотип")
+		.header__location.location.d-flex
+			.location__img
+				svg(width="40" height="40" fill="#706F6F")
+					use(xlink:href="./dist/assets/img/svg-sprites.svg#location")
+			.location__descr
+				span Тула, Россия
+				span место
+		.header__mail.mail.d-flex
+			.mail__img
+				svg(width="40" height="40" fill="#706F6F")
+					use(xlink:href="./dist/assets/img/svg-sprites.svg#mail")
+			.mail__descr
+				a(href="mailto:vasin.oreh65@yandex.ru" target="_blank") vasin.oreh65@yandex.ru
+				span электронная почта
+		.header__phone.phone.d-flex
+			.phone__img
+				svg(width="37" height="41" fill="#706F6F")
+					use(xlink:href="./dist/assets/img/svg-sprites.svg#phone")
+			.phone__descr
+				a(href="tel:+79606194781" target="_blank") +7-960-619-47-81
+				span телефон&nbsp;и&nbsp;мессенджеры
+		.header__social.social.d-flex
+			a(href="http://vk.com" target="_blank")
+				svg(width="38" height="38" fill="#706F6F")
+					use(xlink:href="./dist/assets/img/svg-sprites.svg#vk")
+			a(href="http://ok.com" target="_blank")
+				svg(width="38" height="38" fill="#706F6F")
+					use(xlink:href="./dist/assets/img/svg-sprites.svg#ok")
+			a(href="http://tg.com" target="_blank")
+				svg(width="38" height="38" fill="#706F6F")
+					use(xlink:href="./dist/assets/img/svg-sprites.svg#tg")
+		.header__burger
+			span
+			span
+			span
+		.header__btn-group.btn-group.d-flex
+			a(href="/#contacts").btn-group__btn ЗАКАЗАТЬ
+			a(href="#").btn-group__btn ПРАЙСЛИСТ

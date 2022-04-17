@@ -1,0 +1,211 @@
+.about {
+	position: relative;
+	z-index: 2;
+	padding-bottom: 10rem;
+	background-color: #EBD28F;
+	&::before {
+		content: '';
+		position: absolute;
+		top: -14rem;
+		width: 100%;
+		height: 14.5rem;
+		background-image: url("../img/bg-about.svg");
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+	&__container {
+		width: 103rem;
+	}
+}
+.knowing {
+	padding-bottom: 5rem;
+	flex-wrap: wrap;
+	&__title span {
+		opacity: 0;
+	}
+	&__images {
+		position: relative;
+		width: 50%;
+		align-self: stretch;
+		overflow: hidden;
+		img, span {
+			box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+		}
+		img:nth-child(2){
+			position: absolute;
+			right: 2rem;
+			bottom: 0;
+			z-index: 1;
+		}
+		span {
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			left: 2rem;
+			padding: 2rem;
+			display: flex;
+			width: 10rem;
+			height: 10rem;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			background-color: #FFC801;
+			border-radius: 50%;
+			font-size: 1.4rem;
+			font-family: Montserrat, sans-serif;
+			font-weight: 700;
+		}
+	}
+	&__info {
+		padding-left: 3rem;
+		padding-bottom: 7rem;
+		width: 50%;
+		&_bottom {
+			padding-top: 9rem;
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
+	&__name {
+		margin-bottom: 2rem;
+		max-width: 40rem;
+		font-size: 3.2rem;
+		font-family: Montserrat, sans-serif;
+		font-weight: 700;
+		letter-spacing: .02em;
+	}
+	&__descr {
+		margin-bottom: 7rem;
+		max-width: 40rem;
+		font-size: 2rem;
+		font-family: Montserrat, sans-serif;
+		font-weight: 700;
+		letter-spacing: .02em;
+		line-height: 1.4;
+	}
+	&__txt {
+		letter-spacing: .05em;
+		line-height: 1.4;
+		&:not(:last-child) {
+			margin-bottom: 5rem;
+		}
+	}
+	&__image {
+		position: relative;
+		z-index: 2;
+		 padding-left: 3rem;
+		 width: 50%;
+		 img {
+			 box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+		 }
+	 }
+}
+
+.description {
+	position: relative;
+	padding: 3rem 0 0 0;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	&__title {
+		padding: 0 4rem 3rem 7rem;
+		cursor: pointer;
+	}
+	&__txt {
+		padding: 0 0 0 7rem;
+		overflow: hidden;
+		max-height: 0;
+		transition-property: max-height, padding;
+		transition-duration: 0.5s;
+		transition-timing-function: ease;
+		p:last-child {
+			padding-bottom: 3rem;
+		}
+		&.show {
+			max-height: 775px;
+		}
+	}
+	&__title, &__txt {
+		letter-spacing: .05em;
+		line-height: 1.4;
+	}
+	&__close {
+		position: absolute;
+		right: 0;
+		top: 3.5rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		transform: rotate(-45deg);
+		transition-property: background-color, transform;
+		transition-timing-function: ease;
+		transition-duration: .3s;
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			top: 1.9rem;
+			left: .5rem;
+			display: inline-block;
+			width: 3rem;
+			height: .1rem;
+			background-color: #000;
+		}
+		&::after {
+			transform: rotate(45deg);
+		}
+		&::before {
+			transform: rotate(-45deg);
+		}
+	}
+	.active {
+		.description__close {
+			background-color: rgba(255,255,255, .5);
+			transform: rotate(0);
+		}
+	}
+	&__title:hover {
+		.description__close {
+			background-color: rgba(255,255,255, .5);
+		}
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0.2rem;
+		top: 1rem;
+		display: inline-block;
+		width: 3.6rem;
+		height: 1.5rem;
+		background-image: url("../img/arrow-2.svg");
+		background-size: cover;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-iteration-count: infinite;
+		animation-name: arrowBounce;
+	}
+}
+
+// Animation
+.knowing__info.animate {
+	.knowing {
+		&__name, &__descr, &__title span {
+			animation-name: fadeInRight;
+			animation-duration: 1s;
+			animation-fill-mode: both;
+		}
+		&__title span {
+			display: block;
+		}
+		&__name {
+			animation-delay: .3s;
+		}
+		&__descr {
+			animation-delay: .6s;
+		}
+	}
+}
+.knowing__images.animate span {
+	display: block;
+	animation-name: fadeInDownBig;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}

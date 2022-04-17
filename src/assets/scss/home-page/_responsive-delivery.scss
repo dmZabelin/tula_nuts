@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1199.98px) {
+	.delivery {
+		&__card:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}
+@media only screen and (max-width: 991.98px) {
+	.delivery {
+		padding-bottom: 8rem;
+		&__card_img,
+		&__images {
+			display: none;
+		}
+		&__card {
+			width: calc(50% - 0.5rem);
+			max-width: 40rem;
+		}
+		&__info {
+			justify-content: center;
+		}
+		.card__post {
+			max-width: 30rem;
+			img {
+				width: 110px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767.98px) {
+	.delivery {
+		padding-top: 10rem;
+		padding-bottom: 5rem;
+		&__title, &__subtitle {
+			padding-left: 3rem;
+			max-width: none;
+			&::after {
+				left: 0;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576.98px) {
+	.delivery {
+		padding-top: 5rem;
+		&__info {
+			flex-wrap: wrap;
+		}
+		&__card {
+			width: 100%;
+			max-width: none;
+			margin-right: 0 !important;
+			&_yellow {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}

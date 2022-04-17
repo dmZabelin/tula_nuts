@@ -1,0 +1,82 @@
+.menu {
+	position: fixed;
+	padding-top: 9.5rem;
+	width: 420px;
+	max-width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	transform: translateX(200%);
+	transition: transform .5s ease;
+	height: 100vh;
+	background-color: #EBD28F;
+	&__navigation {
+		padding: 5rem 2rem 2rem 10rem;
+	}
+	&.show {
+		transform: translateX(0);
+	}
+	.open-sub > a {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			margin-top: -3px;
+			left: -2rem;
+			display: inline-block;
+			width: 13px;
+			height: 6px;
+			background-image: url("../img/arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			animation-iteration-count: infinite;
+			animation-name: arrowBounce-left;
+		}
+		&.active {
+			&::before {
+				transform: rotate(0);
+				animation: none;
+			}
+		}
+	}
+}
+.sub-menu {
+	background-color: #EBD28F;
+	width: max-content;
+	max-height: 0;
+	overflow: hidden;
+	transition-property: max-height, padding;
+	transition-duration: .5s;
+	transition-timing-function: ease;
+	a {
+		color: #7A7A7A;
+	}
+	&.show {
+		padding: 2rem 3rem 0 3rem;
+		max-height: 500px;
+	}
+}
+.menu, .sub-menu {
+	a {
+		font-family: Montserrat, sans-serif;
+		font-weight: 700;
+		cursor: pointer;
+		transition: color .3s ease;
+		&:hover {
+			color: #0cff00;
+		}
+	}
+	&__item {
+		&_red a {
+			color: #FF2222;
+		}
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+}

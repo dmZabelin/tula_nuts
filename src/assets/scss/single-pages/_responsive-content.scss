@@ -1,0 +1,183 @@
+@media only screen and (max-width: 1199.98px) {
+	.content-float {
+		&__image {
+			max-width: 47rem;
+		}
+		&__title, &__subtitle {
+			max-width: 45rem;
+		}
+		&__subtitle {
+			margin-bottom: 4rem;
+		}
+	}
+	.content-float__txt_black {
+		max-width: none;
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 991.98px) {
+	.content-float {
+		padding-right: 3rem;
+	}
+	.content-mansory .card__icon {
+		max-width: 15rem;
+		height: 13.5rem;
+	}
+}
+@media only screen and (max-width: 767.98px) {
+	.content-first {
+		padding-top: 10rem;
+	}
+	.content-float {
+		margin: auto auto 5rem;
+		width: 80rem;
+		max-width: 100%;
+		&__image {
+			float: none;
+			margin: auto auto 3rem;
+			padding: 0;
+		}
+		&__image-descr {
+			left: 0;
+			width: 100%;
+		}
+		&__title, &__subtitle {
+			max-width: none;
+		}
+	}
+	.content-float_right {
+		padding-right: 0;
+		.content-float {
+			&__image {
+				float: none;
+				margin: auto auto 3rem;
+				padding: 0;
+			}
+		}
+	}
+	.content-descr__info {
+		width: 100% !important;
+		&:nth-child(1) {
+			padding-right: 0;
+			margin-bottom: 5rem;
+		}
+		&:nth-child(2) {
+			text-align: center;
+		}
+	}
+	.content-flex {
+		flex-wrap: wrap;
+		&__img, &__info {
+			width: 100%;
+		}
+		&-right {
+			.content-flex__img {
+				order: 1;
+			}
+			.content-flex__info {
+				 order: 2;
+			 }
+		}
+		&__img {
+			margin-bottom: 2rem;
+		}
+		&__info {
+			border-top: none;
+			border-bottom: 2px solid #EBD28F;
+			padding-bottom: 2rem;
+			&_white-border {
+				border-bottom: 2px solid #fff;
+			}
+		}
+	}
+
+	.content-mansory {
+		.card-wrapper {
+			padding: .5rem;
+		}
+		.spread {
+			flex-direction: column-reverse;
+			&__info, &__image {
+				width: 100%;
+			}
+			&__image {
+				background-image: url("../img/spread-bg.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				min-height: 50rem;
+			}
+		}
+	}
+
+	.content-sanitary__info {
+		width: 100%;
+		padding: 10rem 5rem;
+	}
+
+	.content-construction {
+		.card {
+			&:not(:last-child) {
+				width: calc(50% - .5rem);
+			}
+			&__descr {
+				padding: 3.5rem 2rem;
+			}
+			&__title {
+				width: 75%;
+			}
+		}
+		&__descr {
+			margin-bottom: 5rem;
+		}
+	}
+}
+@media only screen and (max-width: 576.98px) {
+	.content-sanitary__info {
+		padding: 7rem 3rem;
+	}
+	.content-mansory {
+		&__cards {
+			columns: 1;
+		}
+		.card {
+			padding: 3rem 2rem;
+			&__icon {
+				padding-left: 0;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	.content-construction {
+		.card {
+			width: 100% !important;
+			margin-bottom: 3rem;
+			&:nth-child(3) {
+				margin: 0 !important;
+			}
+		}
+	}
+	.content-collection__img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 449.98px) {
+	.content-float__title, .content-float__subtitle {
+		padding: 0;
+	}
+	.content-float__title {
+		&::before {
+			display: none;
+		}
+	}
+	.spread {
+		&__descr {
+			padding: 1.5rem;
+			font: 700 1.6rem "Montserrat", sans-serif;
+		}
+		&__info {
+			padding: 3rem 2rem;
+		}
+	}
+
+}

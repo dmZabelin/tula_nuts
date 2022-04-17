@@ -1,0 +1,22 @@
+extends ../template/walnut-template.pug
+block variables
+	-var title = "Кизил | Тульский Орех"
+
+prepend styles
+
+block header
+	include ../snippets/header.pug
+
+block content
+	include ../snippets/main-dogwood-page
+
+block footer
+	include ../snippets/footer.pug
+
+block other
+	a(href="/#main" hidden).arrow-up
+		include ../snippets/svg/arrow-up
+
+prepend scripts
+	script(src="dist/libs/js/simplebar.min.js")
+	script(src="dist/libs/js/anime.min.js")
